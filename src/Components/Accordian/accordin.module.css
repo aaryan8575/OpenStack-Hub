@@ -1,0 +1,18 @@
+.accordian {
+  @apply px-container py-10;
+}
+.h1 {
+  @apply font-bold text-center mb-6;
+}
+.p {
+  @apply font-medium text-center mb-6;
+}
+.content {
+  @apply md:grid md:grid-cols-2 px-container;
+}
+.contentdiv {
+  @apply flex justify-between py-4;
+}
+.svg {
+  @apply flex items-center;
+}

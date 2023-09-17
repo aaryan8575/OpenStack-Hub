@@ -1,0 +1,14 @@
+.gradientContent {
+  @apply relative px-4 font-bold md:w-3/4;
+}
+
+.gradientContent::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 8px;
+  border-radius: 8px;
+  background: linear-gradient(-180deg, #00eaff 0%, #9854cb 131%);
+}

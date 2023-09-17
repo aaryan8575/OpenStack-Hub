@@ -1,0 +1,49 @@
+.header {
+  @apply z-50 sticky top-0 bg-headerBg md:bg-opacity-70 flex justify-between items-center;
+  backdrop-filter: blur(50px);
+
+  & .navToggler {
+    @apply md:hidden hover:cursor-pointer;
+
+    & .togglerIcon {
+      @apply w-6 aspect-square;
+    }
+  }
+}
+
+.navBar {
+  @apply -z-10 absolute top-0 h-screen w-screen md:w-full md:h-full gap-8 justify-center flex flex-col md:relative md:flex-row md:gap-3 lg:gap-8 items-center md:justify-end;
+  transition: all 0.3s linear;
+}
+.hiddenNavBar {
+  @apply left-[-110%] md:left-0;
+}
+.visibleNavbar {
+  @apply left-0 bg-headerBg md:bg-transparent;
+}
+
+.link {
+  position: relative;
+}
+
+.link::before {
+  content: '';
+  position: absolute;
+  width: 0%;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid white;
+  transition: width 0.3s ease-out;
+}
+
+.link:hover::before {
+  width: 100%;
+}
+
+.activeLink {
+  @apply opacity-100;
+}
+
+.activeLink::before {
+  width: 100%;
+}

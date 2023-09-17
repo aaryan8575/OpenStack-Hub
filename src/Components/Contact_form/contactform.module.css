@@ -1,0 +1,21 @@
+.contactform {
+  @apply flex flex-col lg:flex-row gap-10;
+}
+.main {
+  @apply pt-7 flex flex-col gap-4 w-full lg:w-1/2;
+}
+.text {
+  @apply text-center lg:text-left;
+}
+.textarea {
+  @apply border-2 flex flex-col justify-center border-primary1 rounded bg-primary3 mt-3 shadow-[0_2px_10px_#5C19E9] flex-1 w-full lg:w-1/2;
+}
+.input {
+  @apply pt-4 px-4;
+}
+.button {
+  @apply flex justify-center py-3;
+}
+.textarea2 {
+  @apply pt-5 w-11/12 border-primary1 bg-primary3 border-2 rounded-lg pl-2 resize-y shadow-[0_2px_10px_#5C19E9];
+}

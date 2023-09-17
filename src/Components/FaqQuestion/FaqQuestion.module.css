@@ -1,0 +1,29 @@
+.details {
+  @apply transition-all w-full border-y border-borderColor;
+
+  & > summary {
+    @apply flex flex-row-reverse items-center justify-between py-4 font-bold text-subtitle2;
+
+    &::marker {
+      @apply hidden;
+    }
+
+    &::before {
+      content: '\002B';
+      @apply ml-10 rotate-90 duration-500 text-h3;
+    }
+  }
+  & > p {
+    @apply w-full p-4;
+  }
+}
+
+.details[open] {
+  & > summary {
+    @apply border-b border-borderColor;
+    &::before {
+      content: '\2212';
+      @apply rotate-180 rounded-full text-center duration-500;
+    }
+  }
+}

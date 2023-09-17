@@ -1,0 +1,58 @@
+.footer {
+  @apply max-w-screen-xl mx-auto flex flex-col gap-8 py-10;
+  & > .navLinks {
+    @apply flex flex-wrap justify-center items-center gap-8;
+  }
+
+  & > .contentWrapper {
+    @apply border-y-[1px] border-secondary1 border-opacity-60 flex flex-col md:flex-row justify-items-stretch justify-center gap-6 sm:px-4 py-10;
+    & > .footerSection {
+      @apply flex flex-col gap-4 px-2  w-full;
+
+      & > .inputWrapper {
+        @apply flex justify-between items-center gap-4 border-b-[1px] border-secondary1 w-full p-2;
+
+        & > .input {
+          @apply bg-transparent placeholder-secondary1 outline-none w-full;
+        }
+
+        & > .iconWrapper {
+          @apply p-1 bg-secondary1 text-primary1 flex justify-center items-center rounded-full cursor-pointer;
+        }
+      }
+      & > .svg {
+        @apply flex items-center gap-4;
+      }
+    }
+    & > .seperator {
+      @apply flex w-full h-[1px] md:h-auto md:w-[1px] bg-white;
+    }
+  }
+}
+
+.link {
+  @apply text-white hover:opacity-100 font-semibold duration-300;
+  position: relative;
+}
+
+.link::before {
+  content: '';
+  position: absolute;
+  width: 0%;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid white;
+  transition: width 0.3s ease-out;
+}
+
+.link:hover::before {
+  width: 100%;
+}
+
+.activeLink {
+  @apply opacity-100;
+}
+
+.activeLink::before {
+  width: 100%;
+}

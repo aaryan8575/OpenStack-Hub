@@ -1,0 +1,74 @@
+.parent {
+  @apply py-40 px-container h-full overflow-hidden relative;
+
+  & > .main {
+    @apply flex flex-col lg:flex-row items-center gap-12;
+    & > .content {
+      @apply md:flex-1 flex-col lg:order-2 text-center md:text-left;
+      & > .line {
+        @apply w-full my-10 border-neutral-200;
+      }
+      & > .review {
+        @apply flex flex-col md:flex-row md:justify-between items-center;
+        & > .starpage {
+          @apply flex flex-col;
+
+          & > .basetext {
+            @apply text-neutral-200 py-4;
+          }
+        }
+        & > .teamsvgs {
+          @apply relative flex flex-col w-48 shrink-0 items-end;
+        }
+      }
+    }
+
+    & > .backsvg {
+      @apply md:flex-1 flex flex-col relative items-center max-w-[475px] md:max-w-[400px] w-[90%] sm:w-[60%] aspect-square;
+      & > .svg {
+        @apply relative w-full animate-spin;
+      }
+      & > .Circle {
+        @apply absolute top-[5%] w-[90%];
+      }
+      & > .Circletextpage {
+        @apply absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center;
+
+        & > .text {
+          @apply flex justify-center items-center text-secondary1;
+        }
+        & > .text2 {
+          @apply text-secondary1 font-sans;
+        }
+      }
+    }
+  }
+
+  & > .teampage {
+    @apply py-24;
+    & > .header {
+      @apply flex flex-col md:flex-row md:justify-between items-end;
+      & > .richtext {
+        @apply lg:w-[45%] text-center md:text-left md:w-[75%];
+      }
+      & > .description {
+        @apply lg:w-[450px] py-6 text-center md:text-left md:w-80;
+      }
+    }
+  }
+}
+.table {
+  @apply flex flex-col pt-2 gap-2 w-full;
+}
+.infopage {
+  @apply flex gap-5 items-center border-t border-neutral-50;
+}
+.btnbox {
+  @apply border-solid border-neutral-50 shadow-[0px_6px_12px_0px_rgba(0,_0,_0,_0.23)] bg-transparent flex flex-col lg:flex-row mr-20 h-10 pt-2 pb-3 px-6 border rounded-lg;
+}
+.durection {
+  @apply text-center;
+}
+.path {
+  @apply lg:mr-28 md:w-36 w-[445px];
+}

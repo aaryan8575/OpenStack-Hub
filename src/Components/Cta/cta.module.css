@@ -1,0 +1,24 @@
+.box {
+  @apply relative w-full flex flex-col justify-center items-center py-20;
+
+  & > .content {
+    @apply flex flex-col justify-center text-center items-center py-9 md:pt-5 mx-10 lg:mx-52 w-full md:max-w-2xl;
+  }
+
+  & > .cta_left {
+    @apply absolute hidden lg:block lg:top-3 lg:left-9;
+  }
+  & > .cta_right {
+    @apply absolute hidden lg:block lg:top-4 lg:right-5;
+  }
+  & > .cta_top {
+    @apply absolute lg:hidden left-auto top-0 md:block my-5 md:my-5;
+  }
+  & > .cta_bottom {
+    @apply absolute lg:hidden left-auto bottom-0 md:block my-5 md:my-5;
+  }
+
+  & > .btn {
+    @apply flex gap-5 pb-8;
+  }
+}

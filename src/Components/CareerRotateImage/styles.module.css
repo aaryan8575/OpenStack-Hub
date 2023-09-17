@@ -1,0 +1,18 @@
+.backsvg {
+  @apply md:flex-1 flex flex-col relative items-center max-w-[384px] w-[90%] sm:w-[60%] aspect-square rounded-full overflow-hidden;
+}
+.svg {
+  @apply relative w-full animate-spin;
+}
+.Circle {
+  @apply absolute top-[5%] w-[90%];
+}
+.Circletextpage {
+  @apply absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center;
+}
+.text {
+  @apply flex justify-center text-center mx-16 font-semibold items-center text-secondary1;
+}
+.text2 {
+  @apply text-secondary1 pt-4 font-sans;
+}

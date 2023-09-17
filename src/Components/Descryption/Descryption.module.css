@@ -1,0 +1,13 @@
+.background_image{
+    width: 420px;
+}
+@media screen and (max-width : 420px){
+    .background_image{
+        width: 320px;
+    }
+}
+@media screen and (max-width : 320px){
+    .background_image{
+        width: 280px;
+    }
+}

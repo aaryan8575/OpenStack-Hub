@@ -1,0 +1,51 @@
+.testimonial {
+  @apply  py-5 md:py-10 overflow-hidden text-white flex flex-col gap-4;
+}
+.container {
+  @apply flex flex-col lg:flex-row gap-8 justify-between w-full md:py-8;
+}
+.content {
+  @apply flex flex-col justify-center lg:flex-1;
+}
+.p {
+  @apply pb-6;
+}
+.subtitle {
+  @apply font-semibold mb-4;
+}
+.imageWrapper {
+  @apply lg:flex-col-reverse;
+}
+.image {
+  @apply mx-auto border border-borderColor bg-secondary2 bg-opacity-20 rounded-md;
+}
+.containdata {
+  @apply grid grid-cols-2 lg:flex flex-col lg:flex-row gap-4 w-full;
+}
+.data {
+  @apply flex flex-1 gap-2 text-center lg:text-left border rounded-xl border-borderColor p-4 cursor-pointer hover:border-white duration-300;
+}
+.dataWrapper {
+  @apply flex flex-col justify-between;
+}
+.desc {
+  @apply hidden sm:block;
+}
+.cont_img {
+  @apply relative flex flex-col justify-center   items-center;
+}
+.cont_cntnt {
+  @apply absolute cursor-pointer;
+}
+.bg_cont_cntnt {
+  @apply absolute animate-ping;
+}
+
+.close_btn {
+  @apply text-white   top-2 absolute right-3;
+}
+
+.bgBlur {
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(20px);
+}

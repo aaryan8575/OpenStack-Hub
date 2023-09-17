@@ -1,0 +1,17 @@
+.carousel {
+  @apply flex gap-12 z-10 py-2 w-full;
+}
+
+.content {
+  @apply flex justify-center items-center;
+}
+
+.animateScroll {
+  /* animation: scroll 6s linear infinite alternate; */
+}
+.animatelReverse {
+  animation-direction: alternate-reverse;
+}
+.svgs {
+  @apply opacity-40 hover:opacity-100 w-24 h-16 object-contain hover:text-secondary1 flex items-center justify-center duration-300;
+}

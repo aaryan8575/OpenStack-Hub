@@ -1,0 +1,17 @@
+.main {
+  @apply relative text-secondary1 min-h-screen -mt-[5rem] pt-[5rem] flex flex-col justify-between;
+
+  & > .parent {
+    @apply flex flex-col justify-center items-center md:w-[70%] mx-auto flex-1;
+
+    & > .maintext {
+      @apply text-center z-10;
+    }
+    & > .details {
+      @apply py-2 text-center z-10;
+    }
+  }
+  & > .imageProperty {
+    @apply object-cover;
+  }
+}

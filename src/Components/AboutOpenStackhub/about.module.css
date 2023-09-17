@@ -1,0 +1,6 @@
+.image {
+  @apply relative lg:my-10 lg:w-[40%] flex-initial aspect-[4/3] border-[1px] rounded-lg border-neutral-50;
+}
+.content {
+  @apply pt-10 lg:p-10 flex-initial lg:w-[60%];
+}

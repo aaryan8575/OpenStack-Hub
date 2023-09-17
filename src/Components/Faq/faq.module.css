@@ -1,0 +1,14 @@
+.main {
+  @apply text-white py-20 flex flex-col gap-20 mb-10;
+
+  & > .content {
+    @apply flex flex-col justify-center items-center gap-3 text-center md:w-[60%] mx-auto;
+  }
+  & > .questionsWrapper {
+    @apply gap-x-7 flex flex-col md:flex-row justify-stretch w-full overflow-hidden;
+
+    & > .questions {
+      @apply flex flex-col flex-1;
+    }
+  }
+}

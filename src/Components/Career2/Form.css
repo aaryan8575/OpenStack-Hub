@@ -1,0 +1,15 @@
+input {
+  @apply p-3 font-medium text-neutral-200 font-sans;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid #90f;
+  box-shadow: 0px 0px 15px 0px rgba(153, 0, 255, 0.6);
+  margin: 10px;
+  outline: none;
+}
+
+.form-container {
+  border-radius: 10px;
+  border: 1px solid #90f;
+  box-shadow: 0px 0px 15px 0px rgba(153, 0, 255, 0.6);
+}

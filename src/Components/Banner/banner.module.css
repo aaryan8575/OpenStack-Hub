@@ -1,0 +1,18 @@
+.main {
+  @apply flex flex-col justify-between min-h-screen -mt-[5rem] pt-[5rem] bg-[url('/assets/icons/bannerBg.svg')] bg-cover bg-center;
+
+  & > .contain {
+    @apply relative flex justify-center items-center py-20 flex-1;
+
+    & > .imagedata {
+      @apply absolute w-full h-full flex justify-center items-center;
+      & > .images {
+        @apply aspect-square relative min-w-[200px] max-w-[300px] w-[60%] overflow-hidden;
+      }
+    }
+  }
+
+  & .title {
+    @apply relative flex flex-col gap-4 text-center mx-auto md:w-[70%];
+  }
+}

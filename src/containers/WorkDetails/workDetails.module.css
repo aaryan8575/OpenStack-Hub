@@ -1,0 +1,3 @@
+.workDetails {
+  @apply md:py-10 md:flex gap-20;
+}

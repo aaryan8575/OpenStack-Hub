@@ -1,0 +1,37 @@
+.parentContainer {
+  @apply pb-20 flex flex-col gap-10 mt-16;
+
+  & .gridContent {
+    @apply grid md:grid-cols-[40%_1fr] gap-8;
+
+    & > .imageContainer {
+      @apply p-6 rounded-lg border-[1px] border-borderColor bg-secondary2 bg-opacity-30;
+
+      & > .imageWrapper {
+        @apply relative h-full min-h-[500px] md:min-h-full;
+      }
+    }
+  }
+
+  & .rightContainer {
+    @apply flex flex-col gap-8;
+
+    & .singleContent {
+      @apply border-[1px] border-borderColor bg-secondary2 bg-opacity-30 rounded-xl py-4 px-10 flex flex-col gap-2;
+    }
+  }
+}
+
+.title {
+  @apply font-bold mb-4;
+}
+
+.image {
+  @apply flex flex-col relative aspect-[1/2] md:w-[250px]  mb-6  md:p-10 gap-4 border-2 border-[#5B5B5B] rounded-xl;
+}
+.imagecontent {
+  @apply flex flex-col md:w-[60%] gap-8 md:gap-6 lg:justify-center;
+}
+.svg {
+  @apply border-2 border-[#5B5B5B] rounded-xl p-4;
+}

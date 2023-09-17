@@ -1,0 +1,23 @@
+.teamsvgs {
+  @apply relative flex flex-col w-48 shrink-0 items-end;
+}
+.teampage {
+  @apply py-10;
+}
+.header {
+  @apply flex flex-col lg:flex-row md:gap-8 md:mx-4 lg:justify-between gap-3 text-center lg:text-left;
+}
+.richtext {
+  @apply lg:w-[440px];
+}
+.description {
+  @apply lg:w-[560px];
+}
+
+.parent:hover .animateImage {
+  @apply md:flex md:absolute md:w-[100px] md:rotate-12 opacity-100 transition-opacity duration-300;
+}
+
+.btn {
+  @apply text-caption uppercase;
+}

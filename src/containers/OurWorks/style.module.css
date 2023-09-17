@@ -1,0 +1,40 @@
+.parentContainer {
+  @apply grid gap-4 py-20;
+
+  & > .gridContainer {
+    @apply relative grid grid-cols-1 lg:grid-cols-3 gap-y-8 lg:gap-8;
+
+    & > .leftContainer {
+      @apply w-full flex lg:flex-col sm:gap-20 justify-between items-center lg:items-start;
+    }
+    & > .content {
+      @apply flex flex-1 w-[50%] sm:w-auto flex-col;
+    }
+    & > .description {
+      @apply py-3 md:py-10;
+    }
+    & .leftImageWrapper {
+      @apply relative hidden sm:block sm:w-full aspect-square rounded-lg overflow-hidden;
+    }
+  }
+
+  & > .projectImage {
+    @apply w-24 h-24 rounded-xl md:w-40 md:h-40 lg:w-[450px] lg:h-[487px];
+  }
+
+  & .rightContainer {
+    @apply flex sm:flex-col md:col-span-2 justify-between h-full w-full gap-4;
+  }
+}
+
+.carouselWrapper {
+  @apply w-full border border-borderColor rounded-lg overflow-hidden p-4 mt-20;
+
+  & .carousel {
+    @apply flex justify-between gap-5;
+
+    & .carouselImage {
+      @apply opacity-70 hover:opacity-100 duration-300 cursor-pointer;
+    }
+  }
+}

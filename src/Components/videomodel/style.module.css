@@ -1,0 +1,13 @@
+.bgBlur {
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(20px);
+  @apply p-10;
+}
+
+.modelContainer {
+  @apply z-50 fixed top-0 left-0 w-screen min-h-screen flex justify-center items-center;
+}
+
+.model {
+  @apply bg-white p-10 rounded-2xl flex flex-col gap-10;
+}

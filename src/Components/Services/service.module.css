@@ -1,0 +1,13 @@
+.service {
+  @apply py-20 min-h-screen;
+
+  & > .data {
+    @apply grid md:grid-cols-2 lg:grid-cols-4 gap-12 items-stretch justify-between py-16;
+    & > .title {
+      @apply flex items-center gap-4 flex-col text-center;
+    }
+    & > .pgraph2 {
+      @apply font-medium break-words;
+    }
+  }
+}

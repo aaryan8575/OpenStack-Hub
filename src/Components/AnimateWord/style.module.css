@@ -1,0 +1,15 @@
+.animateTextWrapper {
+  @apply flex flex-col h-10;
+}
+.animateText {
+  animation: textAnimation 0.5s ease;
+}
+
+@keyframes textAnimation {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
